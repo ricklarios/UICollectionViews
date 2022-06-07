@@ -38,6 +38,9 @@ extension ViewController: UICollectionViewDataSource {
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+		if section == 0 {
+			return 2
+		}
 		return myCountries.count
 	}
 	
@@ -68,7 +71,11 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 	
 	// Establecemos el tamaño de cada celda
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		return CGSize(width: myCellWidth, height: myCellWidth) // Definimos el tamaño de una celda usando myCellWidth
+		
+		if indexPath.section == 0 {
+			return CGSize(width: myCellWidth, height: myCellWidth) // Definimos el tamaño de una celda usando myCellWidth
+		}
+		return CGSize(width: myCellWidth * 2, height: myCellWidth * 2) // Definimos el tamaño de una celda usando myCellWidth
 		
 	}
 }
