@@ -13,6 +13,8 @@ class ViewController: UIViewController {
 	
 	private let myCountries = ["España", "Mexico","Perú","Colombia","Argentina","EEUU","Francia","Italia",]
 	
+	private let myCellWidth = UIScreen.main.bounds.width / 2 // Calculamos la mitad del tamaño de la pantalla
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -58,5 +60,15 @@ extension ViewController: UICollectionViewDelegate {
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		
 		print("\(indexPath.section) -> \(indexPath.row) \(myCountries[indexPath.row])")
+	}
+}
+
+// MARK: - UICollectionViewDelegateFlowLayout
+extension ViewController: UICollectionViewDelegateFlowLayout {
+	
+	// Establecemos el tamaño de cada celda
+	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+		return CGSize(width: myCellWidth, height: myCellWidth) // Definimos el tamaño de una celda usando myCellWidth
+		
 	}
 }
