@@ -13,6 +13,8 @@
 		604F4199285008530050A334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604F4197285008530050A334 /* Main.storyboard */; };
 		604F419B2850086E0050A334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604F419A2850086E0050A334 /* Assets.xcassets */; };
 		604F419E2850086E0050A334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604F419C2850086E0050A334 /* LaunchScreen.storyboard */; };
+		604F41AB285012DE0050A334 /* MyCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604F41A9285012DE0050A334 /* MyCustomCollectionViewCell.swift */; };
+		604F41AC285012DE0050A334 /* MyCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 604F41AA285012DE0050A334 /* MyCustomCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		604F419A2850086E0050A334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		604F419D2850086E0050A334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		604F419F2850086E0050A334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		604F41A9285012DE0050A334 /* MyCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		604F41AA285012DE0050A334 /* MyCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				604F419A2850086E0050A334 /* Assets.xcassets */,
 				604F419C2850086E0050A334 /* LaunchScreen.storyboard */,
 				604F419F2850086E0050A334 /* Info.plist */,
+				604F41A9285012DE0050A334 /* MyCustomCollectionViewCell.swift */,
+				604F41AA285012DE0050A334 /* MyCustomCollectionViewCell.xib */,
 			);
 			path = UICollectionViews;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 				604F419E2850086E0050A334 /* LaunchScreen.storyboard in Resources */,
 				604F419B2850086E0050A334 /* Assets.xcassets in Resources */,
 				604F4199285008530050A334 /* Main.storyboard in Resources */,
+				604F41AC285012DE0050A334 /* MyCustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +147,7 @@
 			files = (
 				604F4196285008530050A334 /* ViewController.swift in Sources */,
 				604F4192285008530050A334 /* AppDelegate.swift in Sources */,
+				604F41AB285012DE0050A334 /* MyCustomCollectionViewCell.swift in Sources */,
 				604F4194285008530050A334 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
