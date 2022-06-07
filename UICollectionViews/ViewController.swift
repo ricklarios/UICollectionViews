@@ -20,6 +20,8 @@ class ViewController: UIViewController {
 		myCollectionView.dataSource = self
 		// Registramos el tipo de celda en nuestro collection view
 		myCollectionView.register(UINib(nibName: "MyCustomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "mycell")
+		// Cazamos el click
+		myCollectionView.delegate = self
 	}
 
 
@@ -47,6 +49,14 @@ extension ViewController: UICollectionViewDataSource {
 		return cell!
 	}
 	
+}
+
+// MARK: - UICollectionViewDelegate
+
+extension ViewController: UICollectionViewDelegate {
 	
-	
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		
+		print("\(indexPath.section) -> \(indexPath.row) \(myCountries[indexPath.row])")
+	}
 }
